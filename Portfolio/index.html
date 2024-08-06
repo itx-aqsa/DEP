@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Aqsa Mahmood</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="intro">
+        <img src="image/aqsa.jpeg" alt="Aqsa Mahmood" />
+        <div class="intro-text">
+          <h4>Hello, It's Me</h4>
+          <h1>Aqsa Mahmood</h1>
+          <p class="typing">
+            <span>I'm</span>
+            <span>a</span>
+            <span>Web</span>
+            <span>Developer.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a BS Computer Science student at the University of Engineering and
+        Technology with a strong foundation in web development. Passionate about
+        new technologies and eager to enhance my skills, I am seeking an
+        internship to gain practical experience in creating innovative web
+        solutions.
+      </p>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Rental Car management system</h3>
+        <p>
+          Designed a C# desktop application for Rental Car Management,
+          integrating a database for streamlined data organization. The system
+          includes advanced features for vehicle tracking, reservation
+          management, and automated maintenance scheduling, ensuring an
+          efficient and user-friendly experience.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Airline Reservation System</h3>
+        <p>
+          Designed and implemented an Airline Reservation System using the MEAN
+          stack, ensuring a comprehensive solution for efficient flight booking
+          and passenger management. Leveraged MongoDB, Express.js, Angular, and
+          Node.js to create a robust, full-stack application with seamless
+          integration and optimal performance.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Saucy Eats</h3>
+        <p>
+          Developed Saucy Eats, a mobile application using Dart and Firebase,
+          seamlessly connecting users to a dynamic food delivery platform.
+          Leveraged Dart for efficient front-end development and Firebase for
+          real-time backend support, ensuring a responsive and feature-rich
+          dining experience.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="send_email.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Aqsa Mahmood | Web Developer</p>
+      <p>
+        Built with ❤️ | Find me on
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> and
+        <a href="https://github.com" target="_blank">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>

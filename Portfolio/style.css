@@ -1,0 +1,224 @@
+/* styles.css */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1b023d;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6600; /* Change color on hover */
+}
+
+section {
+    padding: 4em 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6em 2em;
+    min-height: 50vh;
+    background: url('image/background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#home .intro {
+    display: flex;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.6);  */
+    padding: 2em;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#home img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-right: 2em;
+}
+
+#home .intro-text {
+    color: #1b023d;
+    max-width: 500px;
+}
+
+.typing {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+
+.typing span {
+    display: inline-block;
+}
+
+#about, #projects, #contact {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 2em;
+    margin: 1em auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+}
+
+#about h2, #projects h2, #contact h2 {
+    border-bottom: 2px solid #1b023d;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    color: #1b023d;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    background: url('image/checkmark.png');
+    padding-left: 2em;
+    margin: 0.5em 0;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    margin: 1em 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+    color: #1b023d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    margin: 0.5em 0 0.2em;
+    font-weight: bold;
+}
+
+#contact form input, 
+#contact form textarea {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+#contact form button {
+    background-color: #1b023d;
+    color: white;
+    padding: 0.8em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #ff6600;
+}
+
+footer {
+    background-color: #1b023d;
+    color: white;
+    text-align: center;
+    padding: 1em 2em;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ff6600; /* Link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
